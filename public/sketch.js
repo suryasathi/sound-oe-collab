@@ -17,6 +17,8 @@ let previous;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
+  bg = loadImage('assets/sonance-bg.jpg');
   socket = io.connect();
   socket.on('mouse', newDrawing);
 
@@ -52,9 +54,25 @@ function newDrawing(data){
   
 
 function draw() {
-  background(33,33,33);
+  background(bg);
   
-  
+  textSize(20);
+  fill(255,255,255);
+  textFont('Helvetica');
+  text('Welcome to Sonance (wip)', 30, 50);
+
+  textSize(15);
+  text('This is a collaborative space for generating sounds with multiple users at the same time.', 30, 70);
+
+  fill(255,210,0);
+  text('How to use this space:', 30, 120);
+
+  fill(255,200,0);
+  textSize(12);
+  text('Click and drag your mouse to generate nodes and corresponding oscillator sounds', 30, 150);
+  text('Whenever you hear a sound and white cursor(s) on screen without your intervention', 30, 170);
+  text('you would know that someone else out there in the world is trying to communicate with you.', 30, 190);
+  text('Happy Communicating !!', 30, 230);
   
   // If it's time for a new point
   if (millis() > next && painting) {
