@@ -65,7 +65,7 @@ function draw() {
   text('This is a collaborative space for generating sounds with multiple users at the same time.', 30, 70);
 
   fill(255,210,0);
-  text('How to use this space:', 30, 120);
+  text('How to use this space (Recommend to use laptop/desktop):', 30, 120);
 
   fill(255,200,0);
   textSize(12);
