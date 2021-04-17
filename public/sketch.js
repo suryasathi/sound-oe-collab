@@ -63,9 +63,9 @@ function draw() {
 
   textSize(12);
   fill(250, 190, 0);
-  text('By Suryasathi Roy, NMD 20', 30, 650);
+  text('By Suryasathi Roy, NMD 20', 30, 670);
   textSize(10);
-  text('An outcome of Shapes of Sound OE module at NID conducted by Ananya Agarwal and Vineesh Amin', 30, 670);
+  text('An outcome of Shapes of Sound OE module at NID conducted by Ananya Agarwal and Vineesh Amin', 30, 690);
 
 
   textSize(15);
@@ -218,6 +218,7 @@ function mouseDragged(){
   }
 
   socket.emit('mouse', data);
+  wave.amp(0.7);
 
   wave.freq(map(mouseX, 0, width, 80, 500));
   let panning = map(mouseX, 0, width, -1.0, 1.0);
