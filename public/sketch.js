@@ -41,6 +41,7 @@ function newDrawing(data){
   fill(255, 255 , 255 );
   ellipse(data.x , data.y , 20, 20);
   wave.start();
+  wave.amp(0.6);
   wave.freq(map(data.x, 0, width, 80, 500));
   playing = true;
   wave.stop(1.2);
