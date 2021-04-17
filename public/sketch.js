@@ -60,27 +60,27 @@ function draw() {
   textSize(20);
   fill(255,255,255);
   textFont('Helvetica');
-  text('Welcome to Sonance (wip)', 30, 50);
+  textStyle(BOLD);
+  text('Welcome to Sonance (wip)', 30, 30);
 
   textSize(12);
-  fill(250, 190, 0);
-  text('By Suryasathi Roy, NMD 20', 30, 670);
-  textSize(10);
-  text('An outcome of Shapes of Sound OE module at NID conducted by Ananya Agarwal and Vineesh Amin', 30, 690);
+  fill(250, 180, 0);
+  text('By Suryasathi Roy, NMD 20 (Guided by Ananya and Vineesh)', 30, 50 );
+  
 
 
   textSize(15);
-  text('This is a real-time collaborative space for generating sounds with multiple users at the same time.', 30, 80);
+  text('This is a real-time collaborative space for generating sounds with multiple users at the same time.', 30, 100);
   
   fill(255,210,0);
-  text('How to use this space (Recommend to use laptop/desktop):', 30, 120);
+  text('How to use this space (Recommend to use laptop/desktop):', 30, 140);
 
   fill(255,200,0);
   textSize(12);
-  text('Click and drag your mouse to generate nodes and corresponding oscillator frequencies', 30, 140);
-  text('Whenever you hear a sound and white cursor(s) on screen without your intervention', 30, 160);
-  text('you would know that someone else out there in the world is trying to communicate with you.', 30, 180);
-  text('Happy Communicating !!', 30, 220);
+  text('Click and drag your mouse to generate nodes and corresponding oscillator frequencies', 30, 160);
+  text('Whenever you hear a sound and white cursor(s) on screen without your intervention', 30, 180);
+  text('you would know that someone else out there in the world is trying to communicate with you.', 30, 200);
+  text('Happy Communicating !!', 30, 240);
   
   // If it's time for a new point
   if (millis() > next && painting) {
